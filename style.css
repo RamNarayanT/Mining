@@ -70,7 +70,7 @@
     font-family: "Times New Roman";
     display: flex;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 200px;
     margin-bottom: 4px;
   }
   
@@ -115,55 +115,96 @@
     padding-left: 5px;
   }
   
-  .content {
-    color: rgb(255, 255, 255);
+  .text-content{
     position: absolute;
-    top: 200px;
-    padding-left: 40px;
+    top: 27%;
+    left: 4%;
+    z-index: 12;
   }
   
-  .content .par {
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-  }
-  
-  .content h1 {
-    font-family: "Times New Roman";
+  .text-content .text{
     font-size: 50px;
+    color: #000000;
+    font-family: "Times New Roman";
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
+    font-weight: 600;
   }
-  
-  .content .cn {
-    width: 160px;
-    height: 40px;
-    background: rgb(0, 0, 0);
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .content .cn a {
-    text-decoration: none;
+
+  .text-content .name{
+    color: #030303;
+    font-family: "Times New Roman";
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    }
+
+    .text-content .job{
+      color: #fdfdff;
+      padding-left: 12px;
+      padding-bottom: 25px;
+      font-family: Arial;
+      letter-spacing: 1.2px;
+      line-height: 30px;
+     }
+
+     .text-content .typing-text{
+      margin-left: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 4px solid #bdc2c1;
+      animation: typing 5s steps(15) infinite;
+    }
+
+    
+    @keyframes typing{
+      0%{
+        width: 0ch;
+      }
+      50%{
+        width: 15ch;
+      }
+      100%{
+        width: 0ch;
+      }
+    }
+
+    
+    .text-content .job .one{
+      color: #fdfbfb;
+    }
+
+
+    .text-content .job .two{
+      color: #ffffff;
+    }
+
+    .buttons{
+      margin: -22px 0 0 50px;
+    }
+    .text-content .buttons button{
+      width: 160px;
+      height: 40px;
+      background: rgb(0, 0, 0);
+      border: none;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .text-content .buttons button{
+      text-decoration: none;
     color: aliceblue;
     transition: 0.4s ease;
-  }
-  
-  .cn:hover {
-    background-color: rgb(161, 193, 194);
-  }
-  
-  .content span {
-    color: rgb(12, 12, 12);
-    font-size: 60px;
-  }
+    }
+     
+    .buttons button:hover{
+      transform: scale(0.97);
+    }
   
   .media-icons {
     display: flex;
